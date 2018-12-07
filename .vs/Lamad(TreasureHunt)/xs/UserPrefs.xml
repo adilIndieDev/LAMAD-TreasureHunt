@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{6C4719E9-8FA2-63D7-9CA7-2A3499462D24}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/RotateMap.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Managers/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Managers/GameManager.cs" Line="50" Column="10" />
-      <File FileName="Assets/Scripts/MainMenu/MainMenu.cs" Line="49" Column="51" />
+      <File FileName="Assets/Scripts/Managers/GameManager.cs" Line="42" Column="5" />
+      <File FileName="Assets/Scripts/MainMenu/MainMenu.cs" Line="45" Column="9" />
       <File FileName="Assets/Scripts/MainMenu/PlayFabLogin.cs" Line="83" Column="68" />
       <File FileName="Assets/Scripts/MainMenu/FBLogin.cs" Line="6" Column="18" />
       <File FileName="Assets/Scripts/Managers/SoundManager.cs" Line="1" Column="1" />
@@ -11,6 +11,8 @@
       <File FileName="Assets/Mapbox/Unity/Map/InitializeMapWithLocationProvider.cs" Line="1" Column="1" />
       <File FileName="Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" Line="56" Column="12" />
       <File FileName="Assets/Scripts/GamePlay/RotateMap.cs" Line="74" Column="86" />
+      <File FileName="Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" Line="39" Column="51" />
+      <File FileName="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" Line="18" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

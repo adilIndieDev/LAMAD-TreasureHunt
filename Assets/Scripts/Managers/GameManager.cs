@@ -34,7 +34,11 @@ public class GameManager : MonoBehaviour
     Loading _loading;
 
 
+    [SerializeField]
+    Camera MapCamera;
 
+    [SerializeField]
+    Camera RiddleCamera;
 
     private void Start()
     {
@@ -80,6 +84,9 @@ public class GameManager : MonoBehaviour
         MapObject.SetActive(false);
         RiddleObject.SetActive(true);
         UIRiddleObject.SetActive(true);
+        MapCamera.GetComponent<AudioListener>().enabled = false;
+        RiddleCamera.GetComponent<AudioListener>().enabled = true;
+
     }
 
     void RiddleSolved(object o)
@@ -98,6 +105,9 @@ public class GameManager : MonoBehaviour
         Score.text = PlayerPrefs.GetInt(PlayerPrefKeys.SCORE, 0).ToString();
         Destroy(rMAp.gameObject);
         EventManager.TriggerEvent(EventNames.UpdatedPlayerScoreUI,null);
+
+        MapCamera.GetComponent<AudioListener>().enabled = true;
+        RiddleCamera.GetComponent<AudioListener>().enabled = false;
     }
 
     void RiddleFailed(object o)
@@ -106,6 +116,9 @@ public class GameManager : MonoBehaviour
         UIRiddleObject.SetActive(false);
 
         MapObject.SetActive(true);
+       
+        MapCamera.GetComponent<AudioListener>().enabled = true;
+        RiddleCamera.GetComponent<AudioListener>().enabled = false;
         //RidlleToDelete = null;
     }
 

@@ -37,9 +37,11 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
-            UserNameTxt.text = PlayerPrefs.GetString(PlayerPrefKeys.DisplayName, "user");
-            ScoreTxt.text = PlayerPrefs.GetInt(PlayerPrefKeys.SCORE, 0).ToString();
+        UserNameTxt.text = PlayerPrefs.GetString(PlayerPrefKeys.DisplayName, "user");
+        ScoreTxt.text = PlayerPrefs.GetInt(PlayerPrefKeys.SCORE, 0).ToString();
+
         if (!PlayFabLogin.Instance.ISINGame)
         {
             LoginMenu.SetActive(true);

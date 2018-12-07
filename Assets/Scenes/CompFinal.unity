@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24965474, g: 0.29756734, b: 0.34963575, a: 1}
+  m_IndirectSpecularColor: {r: 0.25209382, g: 0.29839385, b: 0.34876025, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1685,7 +1685,7 @@ AudioListener:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534636289}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &534636292
 Camera:
   m_ObjectHideFlags: 0
@@ -4295,6 +4295,8 @@ MonoBehaviour:
   Score: {fileID: 1518625228}
   _map: {fileID: 1064723900}
   _loading: {fileID: 2032293108}
+  MapCamera: {fileID: 809898045}
+  RiddleCamera: {fileID: 534636292}
 --- !u!1 &1149089010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5731,7 +5733,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.6, y: 3.4100647}
+  m_AnchoredPosition: {x: 129.4, y: 3.4100647}
   m_SizeDelta: {x: 39.14, y: 43.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1518625227
